@@ -1,28 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Saman Siadati: Project 3</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The callback parameter is required, so we use console.debug as a noop -->
     <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJWxG12xca6qbxtYxxzrKtfbag6EAgEj0&callback=console.debug&libraries=maps,marker&v=beta">
     </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Gugi&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">  </head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+      gmp-map {
+        height: 100%;
+      }
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
   <body>
-    <header id="map-header">
-        <h1>Google Map</h1>
-    </header>
-     <nav id="main-nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="machine_learning.html">Machine Learning Evolution</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="map.html">Google Map</a></li>
-        </ul>
-    </nav>
-    <gmp-map center="-37.798362731933594,144.9608154296875" zoom="14" map-id="MelUni_MAP_ID">
-      <gmp-advanced-marker position="-37.798362731933594,144.9608154296875" title="University of Melbourne"></gmp-advanced-marker>
+    <gmp-map center="-37.798362731933594,144.9608154296875" zoom="14" map-id="DEMO_MAP_ID">
+      <gmp-advanced-marker position="-37.798362731933594,144.9608154296875" title="My location"></gmp-advanced-marker>
     </gmp-map>
   </body>
 </html>
