@@ -1,29 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    ...
-<style>
-  #map {
-    height: 400px;
-    width: 80%        
-  }
-</style>
+  <meta charset="utf-8">
+    <title>Saman Siadati: Project 3</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <div id="map"></div>
-    <script>
-      function initMap() {
-        var options = {
-          zoom: 15,
-          center: { lat: 33.933241, lng: -84.340288 },
-        };
-        var map = new google.maps.Map(document.getElementById('map'), options);
-
-        var marker = new google.maps.Marker({
-          position: { lat: 33.933241, lng: -84.340288 },
-          map: map,
-        });
-      }
-    </script>
-    <script defer
-          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQ_TNw7LG0PiQha4vHfE66TvFPCZtHj8Y&callback=initMap">
-        </script>
+  <header id="map-header">
+    <h1>Google Map</h1>
+  </header>
+  <nav id="main-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="machine_learning.html">Machine Learning Evolution</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="map.html">Google Map</a></li>
+    </ul>
+  </nav>
+  <main id="main-content">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJWxG12xca6qbxtYxxzrKtfbag6EAgEj0&callback=initMap" async defer></script>
+    <script src="js/main.js"></script>  </main>
+  <footer id="footer">
+    <div id="disc-box">
+      <p class="disclaimer">This website has been created by Saman Siadati as a project of Fundamentals of Web Development at Illinois Tech</p>
+    </div>
+  </footer>
 </body>
+</html>
