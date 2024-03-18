@@ -1,5 +1,10 @@
 <head>
-    ...
+    <meta charset="utf-8">
+    <title>Saman Siadati: Project 3</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 <style>
   #map {
     height: 400px;
@@ -8,7 +13,18 @@
 </style>
 </head>
 <body>
-    <div id="map"></div>
+  <header id="map-header">
+        <h1>Google Map</h1>
+  </header>
+  <nav id="main-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="machine_learning.html">Machine Learning Evolution</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="map.html">Google Map</a></li>
+    </ul>
+  </nav>
+  <div id="map"></div>
     <script>
       function initMap() {
         var options = {
