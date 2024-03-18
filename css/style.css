@@ -32,6 +32,15 @@ header h1 {
   padding: 1.5em;
 }
 
+gmp-map {
+  height: 100%;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
 #main-nav {
   float: left;
