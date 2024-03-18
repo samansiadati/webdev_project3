@@ -20,9 +20,24 @@
       <li><a href="map.html">Google Map</a></li>
     </ul>
   </nav>
+  <body>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var options = {
+          zoom: 15,
+          center: { lat: 33.933241, lng: -84.340288 },
+        };
+        var map = new google.maps.Map(document.getElementById('map'), options);
+        var marker = new google.maps.Marker({
+          position: { lat: 33.933241, lng: -84.340288 },
+          map: map,
+        });
+      }
   <main id="main-content">
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJWxG12xca6qbxtYxxzrKtfbag6EAgEj0&callback=initMap" async defer></script>
-    <script src="js/main.js"></script>  </main>
+    <script src="js/main.js"></script>  
+  </main>
   <footer id="footer">
     <div id="disc-box">
       <p class="disclaimer">This website has been created by Saman Siadati as a project of Fundamentals of Web Development at Illinois Tech</p>
